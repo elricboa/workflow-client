@@ -1,15 +1,15 @@
-package xin.shengtong;
+package fun.elricboa;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.Sets;
-import xin.shengtong.entity.Relation;
-import xin.shengtong.entity.UserType;
-import xin.shengtong.enums.ProcessStatus;
-import xin.shengtong.enums.User;
-import xin.shengtong.state.SimpleWorkflowState;
-import xin.shengtong.workflow.DefaultWorkflowBuilder;
-import xin.shengtong.workflow.impl.SimpleWorkflowContext;
+import fun.elricboa.entity.Relation;
+import fun.elricboa.entity.UserType;
+import fun.elricboa.enums.ProcessStatus;
+import fun.elricboa.enums.User;
+import fun.elricboa.state.SimpleWorkflowState;
+import fun.elricboa.workflow.DefaultWorkflowBuilder;
+import fun.elricboa.workflow.impl.SimpleWorkflowContext;
 
 import java.util.Collection;
 import java.util.Date;
@@ -44,11 +44,14 @@ public class WorkflowClientTest {
     }
 
     public static void main(String[] args) {
+        //创建要测试的Groovy文件形式的流程模板实例
         WorkFlowTemplate workFlowTemplate = (WorkFlowTemplate) new DefaultWorkflowBuilder().run();
+        //构建简单流程起始状态信息
         SimpleWorkflowState simpleWorkflowState = new SimpleWorkflowState();
         simpleWorkflowState.setStatus(ProcessStatus.NOT_START);
         simpleWorkflowState.setUpdateTime(now);
         final Scanner scanner = new Scanner(System.in);
+        //构建简单流程上下文信息
         SimpleWorkflowContext simpleWorkflowContext = new SimpleWorkflowContext() {
             public String get(String keyType){
                 System.out.println(keyType);

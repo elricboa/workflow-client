@@ -1,8 +1,8 @@
-package xin.shengtong.workflow
+package fun.elricboa.workflow
 
-import xin.shengtong.enums.ProcessStatus
-import xin.shengtong.enums.SysUser
-import xin.shengtong.workflow.builder.WorkFlowBuilder
+import fun.elricboa.enums.ProcessStatus
+import fun.elricboa.enums.SysUser
+import fun.elricboa.workflow.builder.WorkFlowBuilder
 
 /**
  * 测试的流程

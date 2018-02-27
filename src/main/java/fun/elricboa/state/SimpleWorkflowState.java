@@ -1,11 +1,13 @@
-package xin.shengtong.state;
+package fun.elricboa.state;
 
 import com.google.common.collect.Maps;
+import fun.elricboa.enums.ProcessStatus;
+import fun.elricboa.enums.User;
 import lombok.Getter;
 import lombok.Setter;
-import xin.shengtong.WorkFlowState;
-import xin.shengtong.enums.ProcessStatus;
-import xin.shengtong.enums.User;
+import fun.elricboa.WorkFlowState;
+import fun.elricboa.enums.ProcessStatus;
+import fun.elricboa.enums.User;
 
 import java.util.Date;
 import java.util.Map;

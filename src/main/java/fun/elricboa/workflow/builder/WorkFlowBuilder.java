@@ -1,11 +1,13 @@
-package xin.shengtong.workflow.builder;
+package fun.elricboa.workflow.builder;
 
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import fun.elricboa.Node;
+import fun.elricboa.workflow.impl.WorkFlowTemplateImpl;
 import groovy.lang.Closure;
-import xin.shengtong.Node;
-import xin.shengtong.WorkFlowTemplate;
-import xin.shengtong.workflow.impl.WorkFlowTemplateImpl;
+import fun.elricboa.Node;
+import fun.elricboa.WorkFlowTemplate;
+import fun.elricboa.workflow.impl.WorkFlowTemplateImpl;
 
 import java.util.Map;
 import java.util.Set;
